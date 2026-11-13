@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYAZU Riyadh — Contemporary Japanese Fine Dining</title>
+  <meta name="description" content="MYAZU Riyadh — Exquisite contemporary Japanese cuisine in the heart of Sulaimaniya. A culinary journey of fire, passion, and artistry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <h2>MYAZU</h2>
+      <div class="preloader-line"><span></span></div>
+      <p>Riyadh</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Side Navigation -->
+  <aside class="side-nav" id="sideNav">
+    <div class="side-logo">M</div>
+    <ul>
+      <li><a href="#home" data-text="Home">Home</a></li>
+      <li><a href="#story" data-text="Story">Story</a></li>
+      <li><a href="#menu" data-text="Menu">Menu</a></li>
+      <li><a href="#experience" data-text="Experience">Experience</a></li>
+      <li><a href="#gallery" data-text="Gallery">Gallery</a></li>
+      <li><a href="#reserve" data-text="Reserve">Reserve</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="side-social">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Twitter">X</a>
+    </div>
+  </aside>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-img active" style="background-image:url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=1920&q=90')"></div>
+      <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1553621042-f6e147245754?w=1920&q=90')"></div>
+      <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=1920&q=90')"></div>
+    </div>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <div class="hero-line-top"></div>
+      <p class="hero-eyebrow">Riyadh · Sulaimaniya</p>
+      <h1 class="hero-title">
+        <span class="word">The</span>
+        <span class="word">Land</span>
+        <span class="word">of</span>
+        <span class="word gold">Plenty</span>
+      </h1>
+      <p class="hero-sub">Exquisite contemporary Japanese cuisine</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn-lux">
+          <span>Reserve a Table</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+        <a href="#menu" class="btn-text">Discover the Menu</a>
+      </div>
+    </div>
+
+    <div class="hero-side-info">
+      <div class="hsi-item">
+        <span>Open Daily</span>
+        <strong>13:00 — 01:30</strong>
+      </div>
+      <div class="hsi-divider"></div>
+      <div class="hsi-item">
+        <span>Per Person</span>
+        <strong>SAR 200+</strong>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+
+    <div class="hero-index">
+      <span id="currentSlide">01</span>
+      <div class="hero-index-line"><div id="heroProgress"></div></div>
+      <span>03</span>
+    </div>
+  </section>
+
+  <!-- STORY / BRAND MYTH -->
+  <section id="story" class="story-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>01</span>
+        <p>Once Upon a Time</p>
+      </div>
+
+      <div class="story-intro reveal">
+        <h2 class="display-title">
+          In a faraway land, a <em>smoky volcano</em> and a <em>sweet lonely sea</em> were struck by love at first sight.
+        </h2>
+      </div>
+
+      <div class="story-body reveal">
+        <p>
+          Hundreds of years later, their explosive passion gave birth to the most magical and fertile place on earth —
+          a land where all species lived in harmony with exquisite plants and lush vegetation.
+        </p>
+        <p class="story-highlight">
+          The place was called <span>MYAZU.</span>
+        </p>
+      </div>
+
+      <div class="story-stats reveal">
+        <div class="stat">
+          <span class="stat-num">MENA</span>
+          <p>50 Best Restaurants</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4.5<span class="stat-star">★</span></span>
+          <p>11,000+ Guest Reviews</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Riyadh</span>
+          <p>Sulaimaniya District</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY STRIP -->
+  <section class="philosophy-strip">
+    <div class="philosophy-marquee">
+      <div class="marquee-track">
+        <span>Smoky</span><span class="dot-sep">◆</span>
+        <span>Sweet</span><span class="dot-sep">◆</span>
+        <span>Spicy</span><span class="dot-sep">◆</span>
+        <span>Vibrant</span><span class="dot-sep">◆</span>
+        <span>Smoky</span><span class="dot-sep">◆</span>
+        <span>Sweet</span><span class="dot-sep">◆</span>
+        <span>Spicy</span><span class="dot-sep">◆</span>
+        <span>Vibrant</span><span class="dot-sep">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>02</span>
+        <p>Contemporary Cuisine</p>
+      </div>
+
+      <div class="menu-head reveal">
+        <h2 class="display-title">Crafted with <em>passion</em>,<br>served with <em>artistry</em>.</h2>
+        <p class="menu-intro-text">
+          A harmonious balance between smoky, sweet, spicy and vibrant flavours —
+          using traditional Japanese techniques and the finest ingredients.
+        </p>
+      </div>
+
+      <div class="menu-filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="signature">Signature</button>
+        <button class="filter" data-filter="starters">Starters</button>
+        <button class="filter" data-filter="mains">Mains</button>
+        <button class="filter" data-filter="dessert">Dessert</button>
+      </div>
+
+      <div class="menu-list" id="menuList">
+        <!-- Signature -->
+        <article class="menu-row reveal" data-cat="signature">
+          <span class="menu-idx">01</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Popcorn Shrimp</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 85</span>
+            </div>
+            <p class="menu-desc">The house signature — crispy, golden, unforgettable.</p>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="signature">
+          <span class="menu-idx">02</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Volcano Maki</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 95</span>
+            </div>
+            <p class="menu-desc">A spectacle of flavour — smoked, glazed, and set aflame.</p>
+            <span class="menu-tag">Signature</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="starters">
+          <span class="menu-idx">03</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Wagyu Beef Tataki</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 140</span>
+            </div>
+            <p class="menu-desc">Seared wagyu, ponzu, microgreens, yuzu kosho.</p>
+            <span class="menu-tag">Starter</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="starters">
+          <span class="menu-idx">04</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Scallop Foie Gras Dumplings</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 120</span>
+            </div>
+            <p class="menu-desc">Delicate parcels of scallop and foie gras, finished with truffle.</p>
+            <span class="menu-tag">Starter</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="mains">
+          <span class="menu-idx">05</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Black Angus Beef</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 210</span>
+            </div>
+            <p class="menu-desc">Korean BBQ sauce, charred vegetables, sesame.</p>
+            <span class="menu-tag">Main</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="mains">
+          <span class="menu-idx">06</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Lobster Rice</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 185</span>
+            </div>
+            <p class="menu-desc">Sriracha black pepper sauce, fresh lobster, seasoned rice.</p>
+            <span class="menu-tag">Main</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="mains">
+          <span class="menu-idx">07</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Shrimp Noodles</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 165</span>
+            </div>
+            <p class="menu-desc">Back by popular demand — house favourite since day one.</p>
+            <span class="menu-tag">Main · Popular</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="mains">
+          <span class="menu-idx">08</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Mushroom Rice</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 95</span>
+            </div>
+            <p class="menu-desc">Wild mushrooms, garlic butter, Japanese rice.</p>
+            <span class="menu-tag">Main</span>
+          </div>
+        </article>
+
+        <article class="menu-row reveal" data-cat="dessert">
+          <span class="menu-idx">09</span>
+          <div class="menu-row-body">
+            <div class="menu-row-head">
+              <h3>Hokkaido Crème Brûlée</h3>
+              <span class="menu-dots"></span>
+              <span class="menu-price">SAR 75</span>
+            </div>
+            <p class="menu-desc">Silken Hokkaido cream, torched caramel crust.</p>
+            <span class="menu-tag">Dessert</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-footnote reveal">
+        <p>Prices are indicative. Seasonal tasting menus and chef specials available daily.</p>
+        <a href="#reserve" class="btn-text gold">Reserve to Experience →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / PHILOSOPHY -->
+  <section id="experience" class="experience-section">
+    <div class="experience-grid">
+      <div class="experience-img reveal">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=85" alt="MYAZU dining room">
+      </div>
+      <div class="experience-text">
+        <div class="section-label reveal">
+          <span>03</span>
+          <p>The Myazu World</p>
+        </div>
+        <h2 class="display-title reveal">An opulent world,<br>a <em>creative lifestyle</em>.</h2>
+        <p class="reveal">
+          A world that combines modern architecture, exclusive contemporary Japanese cuisine
+          and a luxurious atmosphere. Every detail — from the lighting to the plating —
+          is designed to heighten your senses.
+        </p>
+        <div class="experience-features reveal">
+          <div class="feature">
+            <span class="feat-num">I.</span>
+            <div>
+              <h4>Contemporary Design</h4>
+              <p>Interiors crafted by world-renowned Japanese designers.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feat-num">II.</span>
+            <div>
+              <h4>Executive Chefs</h4>
+              <p>Traditional techniques, modern vision, finest ingredients.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feat-num">III.</span>
+            <div>
+              <h4>Private Dining</h4>
+              <p>Exclusive spaces for celebrations and intimate evenings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>04</span>
+        <p>A Glimpse Inside</p>
+      </div>
+      <h2 class="display-title center reveal">Every plate, a <em>masterpiece</em>.</h2>
+
+      <div class="gallery-mosaic">
+        <figure class="g-item g-tall reveal">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&q=85" alt="Sushi">
+        </figure>
+        <figure class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&q=85" alt="Japanese dish">
+        </figure>
+        <figure class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=800&q=85" alt="Dining">
+        </figure>
+        <figure class="g-item g-wide reveal">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=1000&q=85" alt="Chef">
+        </figure>
+        <figure class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=800&q=85" alt="Plate">
+        </figure>
+        <figure class="g-item g-tall reveal">
+          <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?w=800&q=85" alt="Ambiance">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reserve" class="reserve-section">
+    <div class="reserve-bg"></div>
+    <div class="container reserve-grid">
+      <div class="reserve-text">
+        <div class="section-label light reveal">
+          <span>05</span>
+          <p>Reservations</p>
+        </div>
+        <h2 class="display-title light reveal">Discover the Myazu<br><em>modern experience</em>.</h2>
+        <p class="reveal">
+          We look forward to welcoming you. Reserve your table and let us craft an evening
+          you will remember — from the first pour to the final course.
+        </p>
+
+        <div class="reserve-info reveal">
+          <div>
+            <span>Opening Hours</span>
+            <p>Fri & Wed–Thu: 13:00 – 01:30<br>Sat–Tue: 13:00 – 00:30</p>
+          </div>
+          <div>
+            <span>Per Person</span>
+            <p>From SAR 200 (à la carte)</p>
+          </div>
+          <div>
+            <span>Call Us</span>
+            <p><a href="tel:+966920009686">+966 9200 09686</a></p>
+          </div>
+        </div>
+      </div>
+
+      <form class="reserve-form reveal" id="reserveForm" novalidate>
+        <h3>Reserve a Table</h3>
+        <div class="rf-group">
+          <input type="text" id="rName" placeholder=" " required>
+          <label for="rName">Full Name</label>
+          <small class="err"></small>
+        </div>
+        <div class="rf-group">
+          <input type="email" id="rEmail" placeholder=" " required>
+          <label for="rEmail">Email</label>
+          <small class="err"></small>
+        </div>
+        <div class="rf-group">
+          <input type="tel" id="rPhone" placeholder=" " required>
+          <label for="rPhone">Phone</label>
+          <small class="err"></small>
+        </div>
+        <div class="rf-row">
+          <div class="rf-group">
+            <input type="date" id="rDate" placeholder=" " required>
+            <label for="rDate" class="label-static">Date</label>
+            <small class="err"></small>
+          </div>
+          <div class="rf-group">
+            <select id="rGuests" required>
+              <option value="" disabled selected></option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6+">6+ Guests</option>
+            </select>
+            <label for="rGuests" class="label-static">Guests</label>
+            <small class="err"></small>
+          </div>
+        </div>
+        <button type="submit" class="btn-lux full">
+          <span>Confirm Reservation</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <p class="rf-success" id="rfSuccess">Thank you — your request has been received. Our team will confirm shortly.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>06</span>
+        <p>Contact Us</p>
+      </div>
+      <h2 class="display-title center reveal">We look forward<br>to <em>welcoming you</em>.</h2>
+
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <span class="contact-label">Location</span>
+          <h4>Dabab Street</h4>
+          <p>As Sulimaniyah, Riyadh<br>Saudi Arabia</p>
+          <a href="https://maps.app.goo.gl/HT9STcFNBiPmcX1CA" target="_blank" rel="noopener">View on Map →</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-label">Reservations</span>
+          <h4>+966 9200 09686</h4>
+          <p>Daily 13:00 – 01:30<br>Fri & Wed–Thu till 01:30</p>
+          <a href="tel:+966920009686">Call Now →</a>
+        </div>
+        <div class="contact-card">
+          <span class="contact-label">Email</span>
+          <h4>hello@myazu.com</h4>
+          <p>For private events and<br>press inquiries.</p>
+          <a href="mailto:hello@myazu.com">Write to Us →</a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps?q=MYAZU+Riyadh+Sulaimaniya&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="MYAZU Riyadh Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>MYAZU</h3>
+        <p>Contemporary Japanese fine dining.<br>Riyadh, Saudi Arabia.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <p>Fri · 13:00 – 01:30<br>Sat–Tue · 13:00 – 00:30<br>Wed–Thu · 13:00 – 01:30</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> MYAZU Riyadh. All rights reserved.</p>
+      <p>Designed with fire & passion.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 15V2M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
